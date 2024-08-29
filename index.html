@@ -7,191 +7,169 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="src/output.css" />
   </head>
-  <body>
-    <nav class="navbar w-full bg-blue-200 z-[80] fixed top-0">
-      <div
-        class="conteiner mx-auto flex justify-between items-center py-2 px-3 md:px-8"
-      >
-        <div class="logo flex items-center gap-2">
-          <a href="index.html" class="h-9"
-            ><img src="img/logo.png" class="w-full h-full object-contain"
-          /></a>
-          <a href="" class="font-Elegant text-sm">SMA IT HSI IDN</a>
+  <body class="bg-[#0F0F0F] text-white font-biasa">
+    <header class="px-4 pt-10 md:mx-10 relative">
+      <nav class="bg-Dark10 p-3 flex justify-between rounded-md relative">
+        <div class="logo flex items-center gap-3">
+          <img
+            src="img/logo.png"
+            class="h-7 w-7 md:h-8 md:w-8"
+            alt="Logo SMA IT HSI IDN"
+          />
+          <a href="#" class="text-[16px]">SMA IT HSI IDN</a>
         </div>
-        <ul class="hidden md:flex items-center justify-between gap-5">
-          <li>
-            <a
-              class="sm:text-xs md:text-base text-[#018491] font-semibold"
-              href="index.html"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              class="sm:text-xs md:text-base text-[#018491] font-semibold"
-              href="about.html"
-              >Tentang</a
-            >
-          </li>
-          <li>
-            <a
-              class="sm:text-xs md:text-base text-[#018491] font-semibold"
-              href="partner.html"
-              >Rekan</a
-            >
-          </li>
-          <li>
-            <a
-              class="sm:text-xs md:text-base text-[#018491] font-semibold"
-              href="service.html"
-              >Layanan</a
-            >
-          </li>
-          <li>
-            <a
-              class="sm:text-xs md:text-base text-[#018491] font-semibold"
-              href="galery.html"
-              >Galeri</a
-            >
-          </li>
-          <li>
-            <a
-              class="sm:text-xs md:text-base text-[#018491] font-semibold"
-              href="info.html"
-              >Info</a
-            >
-          </li>
-          <li>
-            <a
-              class="sm:text-xs md:text-base text-[#018491] font-semibold"
-              href=""
-              >Karir</a
-            >
-          </li>
-          <li>
-            <a
-              class="sm:text-xs md:text-base text-[#018491] font-semibold"
-              href=""
-              >Kontak</a
-            >
-          </li>
-        </ul>
-        <button
-          onclick="openNavbar()"
-          class="toggle h-14 flex items-center md:hidden"
-        >
-          <i class="ph-bold ph-list text-2xl cursor-pointer text-[#018491]"></i>
-        </button>
-      </div>
-    </nav>
-    <aside
-      class="w-full h-screen bg-blue-400 bg-opacity-40 fixed z-[90] top-0 transition-all duration-300 ease-in-out md:hidden translate-x-full"
-    >
-      <div
-        class="content backdrop-blur h-full flex justify-center items-center"
-      >
-        <button
-          onclick="closeNavbar()"
-          class="absolute top-4 right-4 z-[99] text-[#018491] text-3xl md:hidden"
-        >
-          <i class="ph ph-x"></i>
-        </button>
-        <ul class="flex flex-col gap-2">
-          <li>
-            <a class="text-xs text-[#018491] font-semibold" href="index.html"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a class="text-xs text-[#018491] font-semibold" href="about.html"
-              >Tentang</a
-            >
-          </li>
-          <li>
-            <a class="text-xs text-[#018491] font-semibold" href="">Rekan</a>
-          </li>
-          <li>
-            <a class="text-xs text-[#018491] font-semibold" href="service.html"
-              >Layanan</a
-            >
-          </li>
-          <li>
-            <a class="text-xs text-[#018491] font-semibold" href="galery.html"
-              >Galeri</a
-            >
-          </li>
-          <li>
-            <a class="text-xs text-[#018491] font-semibold" href="info.html"
-              >Info</a
-            >
-          </li>
-          <li>
-            <a class="text-xs text-[#018491] font-semibold" href="partner.html"
-              >Karir</a
-            >
-          </li>
-          <li>
-            <a class="text-xs text-[#018491] font-semibold" href="">Kontak</a>
-          </li>
-        </ul>
-      </div>
-    </aside>
-    <!-- section home -->
-
-    <!-- <section class="bg-teal-300">
-      <div
-        class="container mx-auto h-screen flex py-2 px-3 md:px-8 items-center"
-      >
-        <div class="content flex flex-col gap-4">
-          <h1 class="text-2xl font-bold">SMA IT HSI IDN</h1>
-          <p>
-            Sebuah sekolah Boarding School yang memadukan antara pelajaran
-            Diniyyah dengan pelajaran IT
-          </p>
-
-          <button
-            class="bg-blue-600 w-fit hover:bg-blue-400 font-semibold px-2 py-1 rounded-md"
+        <ul class="hidden md:flex gap-[14px]">
+          <li
+            class="bg-biru px-3 py-2 rounded-md hover:bg-hoverbtn transition-all duration-200"
           >
-            DAFTAR
-          </button>
+            <a href="#">Home</a>
+          </li>
+          <li
+            class="bg-biru px-3 py-2 rounded-md hover:bg-hoverbtn transition-all duration-200"
+          >
+            <a href="#">About</a>
+          </li>
+          <li
+            class="bg-biru px-3 py-2 rounded-md hover:bg-hoverbtn transition-all duration-200"
+          >
+            <a href="#">Services</a>
+          </li>
+          <li
+            class="bg-biru px-3 py-2 rounded-md hover:bg-hoverbtn transition-all duration-200"
+          >
+            <a href="#">Projects</a>
+          </li>
+          <li
+            class="bg-biru px-3 py-2 rounded-md hover:bg-hoverbtn transition-all duration-200"
+          >
+            <a href="#">Careers</a>
+          </li>
+          <li
+            class="bg-[#3FA2F6] px-3 py-2 rounded-md hover:bg-transparent border-2 border-[#3FA2F6] transition-all duration-200"
+          >
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
+        <button
+          id="menubtn"
+          class="p-[10px] bg-biru rounded-md md:hidden hover:bg-hoverbtn transition-all duration-200"
+        >
+          <svg
+            class="h-6 w-6 fill-white"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3 6.75C3 6.33579 3 6 3.75 6H20.25C20.6642 6 21 6.33579 21 6.75C21 7.16421 20.6642 7.5 20.25 7.5H3.75C3.33579 7.5 3 7.16421 3 6.75ZM3 12C3 11.5858 3.33579 11.25 3.75 11.25H20.25C20.6642 11.25 21 11.5858 21 12C21 12.4142 20.6642 12.75 20.25 12.75H3.75C3.33579 12.75 3 12.4142 3 12ZM11.25 17.25C11.25 16.8358 11.5858 16.5 12 16.5H20.25C20.6642 16.5 21 16.8358 21 17.25C21 17.6642 20.6642 18 20.25 18H12C11.5858 18 11.25 17.6642 11.25 17.25Z"
+              fill="white"
+            />
+          </svg>
+        </button>
+
+        <!-- Mobile Menu -->
+        <aside
+          id="mobileMenu"
+          class="md:hidden absolute left-0 right-0 top-full text-white bg-Dark10 space-y-2 p-4 transform scale-y-0 origin-top transition-transform duration-500 ease-in-out"
+        >
+          <ul class="flex flex-col text-center w-full gap-3">
+            <li
+              class="bg-biru px-3 py-2 rounded-md hover:bg-hoverbtn transition-all duration-200"
+            >
+              <a href="#">Home</a>
+            </li>
+            <li
+              class="bg-biru px-3 py-2 rounded-md hover:bg-hoverbtn transition-all duration-200"
+            >
+              <a href="#">About</a>
+            </li>
+            <li
+              class="bg-biru px-3 py-2 rounded-md hover:bg-hoverbtn transition-all duration-200"
+            >
+              <a href="#">Services</a>
+            </li>
+            <li
+              class="bg-biru px-3 py-2 rounded-md hover:bg-hoverbtn transition-all duration-200"
+            >
+              <a href="#">Projects</a>
+            </li>
+            <li
+              class="bg-biru px-3 py-2 rounded-md hover:bg-hoverbtn transition-all duration-200"
+            >
+              <a href="#">Careers</a>
+            </li>
+            <li
+              class="bg-[#3FA2F6] px-3 py-2 rounded-md hover:bg-transparent border-2 border-[#3FA2F6] transition-all duration-200"
+            >
+              <a href="#">Contact Us</a>
+            </li>
+          </ul>
+        </aside>
+      </nav>
+    </header>
+
+    <section class="bungkus pt-5">
+      <div class="container bg-Dark10 p-3 w-fit">
+        <div class="content flex flex-col gap-2">
+          <h1 class="text-xl font-bold">SMA IT HSI IDN</h1>
+          <p class="text-sm">
+            Ini adalah sekolah menengah atas yang menggabungkan pendidikan
+            berbasis Islam dengan teknologi informasi (IT).
+          </p>
+          <div class="btn flex gap-2">
+            <button
+              class="px-2 py-1 rounded-md bg-biru hover:bg-hoverbtn transition-all duration-300"
+            >
+              Mengenal HSI
+            </button>
+            <button
+              class="px-2 py-1 rounded-md bg-biru hover:bg-hoverbtn transition-all duration-300"
+            >
+              Mengenal IDN
+            </button>
+          </div>
         </div>
       </div>
-    </section> -->
-    <section
-      class="h-screen flex items-center"
-      style="
-        background-image: url('img/bg.jpeg');
-        background-size: cover;
-        background-position: center;
-      "
-    >
       <div
-        class="container rounded-lg py-2 px-3 md:px-8 bg-white h-fit w-fit opacity-0.5"
+        class="jumlah mt-5 border-2 rounded-md grid grid-cols-2 grid-rows-4 gap-3 p-3"
       >
-        <h2 class="text-3xl font-bold mb-4">SMA IT HSI IDN</h2>
-        <div class="flex items-center mb-4">
-          <div class="flex items-center">
-            <span class="text-lg font-medium ml-2">4,7/5</span>
-          </div>
-          <span class="ml-4">(1023 Reviews)</span>
-          <span class="ml-4">20327 Student</span>
+        <div class="santri bg-Dark10 p-3 w-full">
+          <p class="text-sm text-center">SANTRI</p>
+          <h1 class="text-2xl text-center">76</h1>
         </div>
-        <div class="flex items-center mb-6">
-          <img src="img/logo.png" alt="Mentor" class="rounded-full mr-4" />
-          <h3 class="text-xl font-bold">Pak Doddy Nur Rohman</h3>
+        <div class="santri bg-Dark10 p-3 w-full">
+          <p class="text-sm text-center">SANTRI</p>
+          <h1 class="text-2xl text-center">76</h1>
         </div>
-        <button
-          class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mr-4"
-        >
-          Daftar Sekarang
-        </button>
-        <button
-          class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded"
-        >
-          Bagikan
-        </button>
+        <div class="santri bg-Dark10 p-3 w-full">
+          <p class="text-sm text-center">SANTRI</p>
+          <h1 class="text-2xl text-center">76</h1>
+        </div>
+        <div class="santri bg-Dark10 p-3 w-full">
+          <p class="text-sm text-center">SANTRI</p>
+          <h1 class="text-2xl text-center">76</h1>
+        </div>
+
+        <div class="santri bg-Dark10 p-3 w-full">
+          <p class="text-sm text-center">SANTRI</p>
+          <h1 class="text-2xl text-center">76</h1>
+        </div>
+        <div class="santri bg-Dark10 p-3 w-full">
+          <p class="text-sm text-center">SANTRI</p>
+          <h1 class="text-2xl text-center">76</h1>
+        </div>
       </div>
     </section>
-    <script src="script.js"></script>
+
+    <!-- JavaScript -->
+    <script>
+      // Toggle Menu Functionality
+      document.getElementById("menubtn").addEventListener("click", function () {
+        const mobileMenu = document.getElementById("mobileMenu");
+        mobileMenu.classList.toggle("scale-y-0");
+        mobileMenu.classList.toggle("scale-y-100");
+      });
+    </script>
   </body>
 </html>

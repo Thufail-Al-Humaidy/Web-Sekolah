@@ -4,9 +4,15 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'Inter': 'inter',
-        'Elegant': 'Playfair Display'
-      }
+        'biasa': 'Inter',
+        'Elegant': 'Playfair Display',
+      },
+      colors:{
+        'Dark10': '#1A1A1A',
+        'bgbody': '#0F0F0F',
+        'biru': '#03346E',
+        'hoverbtn': '#4589DA'
+      },
     },
   },
   plugins: [],
