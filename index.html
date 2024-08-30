@@ -6,9 +6,20 @@
     <title>SMA IT HSI IDN</title>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: inter;
+      }
+    </style>
   </head>
   <body class="bg-[#0F0F0F] text-white font-biasa">
-    <header class="px-4 pt-10 md:mx-10 relative">
+    <header class="px-4 pt-10 md:mx-10 ">
       <nav class="bg-Dark10 p-3 flex justify-between rounded-md relative">
         <div class="logo flex items-center gap-3">
           <img
@@ -16,7 +27,7 @@
             class="h-7 w-7 md:h-8 md:w-8"
             alt="Logo SMA IT HSI IDN"
           />
-          <a href="#" class="text-[16px]">SMA IT HSI IDN</a>
+          <a href="#" class="text-[16px] font-Elegant">SMA IT HSI IDN</a>
         </div>
         <ul class="hidden md:flex gap-[14px]">
           <li
@@ -109,55 +120,90 @@
       </nav>
     </header>
 
-    <section class="bungkus pt-5">
-      <div class="container bg-Dark10 p-3 w-fit">
-        <div class="content flex flex-col gap-2">
-          <h1 class="text-xl font-bold">SMA IT HSI IDN</h1>
-          <p class="text-sm">
-            Ini adalah sekolah menengah atas yang menggabungkan pendidikan
-            berbasis Islam dengan teknologi informasi (IT).
-          </p>
-          <div class="btn flex gap-2">
-            <button
-              class="px-2 py-1 rounded-md bg-biru hover:bg-hoverbtn transition-all duration-300"
-            >
-              Mengenal HSI
-            </button>
-            <button
-              class="px-2 py-1 rounded-md bg-biru hover:bg-hoverbtn transition-all duration-300"
-            >
-              Mengenal IDN
-            </button>
+    <section>
+      <div class="bungkus flex flex-col gap-3">
+        <div class="container flex gap-3 justify-between">
+          <div class="rounded-md bg-Dark10 p-3 w-full">
+            <div class="content flex flex-col gap-2">
+              <h1 class="text-xl font-bold font-Elegant">SMA IT HSI IDN</h1>
+              <p class="text-sm">
+                Ini adalah sekolah menengah atas yang menggabungkan pendidikan
+                berbasis Islam dengan teknologi informasi (IT).
+              </p>
+              <div class="btn flex gap-2">
+                <button
+                  class="px-2 py-1 rounded-md bg-biru hover:bg-hoverbtn transition-all duration-300"
+                >
+                  Mengenal HSI
+                </button>
+                <button
+                  class="px-2 py-1 rounded-md bg-biru hover:bg-hoverbtn transition-all duration-300"
+                >
+                  Mengenal IDN
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hidden image border-2 border-biru p-3 rounded-md md:flex flex-col gap-3 w-1/4"
+          >
+            <img src="img/idn.jpeg" alt="" class="w-fit" />
+            <img src="img/hsi.png" alt="" class="w-fit" />
+          </div>
+        </div>
+
+        <div
+          class="jumlah border-2 border-biru rounded-md grid grid-cols-2 md:grid-cols-6 md:grid-rows-1 grid-rows-4 gap-3 p-3"
+        >
+          <div
+            class="p-3 w-full flex flex-col items-center justify-center bg-Dark10 gap-3"
+          >
+            <p class="text-sm text-center">TAHFIDZ</p>
+            <h1 class="text-2xl text-center">76</h1>
+          </div>
+          <div
+            class="p-3 w-full flex flex-col items-center justify-center bg-Dark10 gap-3"
+          >
+            <p class="text-sm text-center">DINIYYAH</p>
+            <h1 class="text-2xl text-center">76</h1>
+          </div>
+          <div
+            class="p-3 w-full flex flex-col items-center justify-center bg-Dark10 gap-3"
+          >
+            <p class="text-sm text-center">IT</p>
+            <h1 class="text-2xl text-center">76</h1>
+          </div>
+          <div
+            class="p-3 w-full flex flex-col items-center justify-center bg-Dark10 gap-3"
+          >
+            <p class="text-sm text-center">BAHASA INGGRIS</p>
+            <h1 class="text-2xl text-center">76</h1>
+          </div>
+
+          <div
+            class="p-3 w-full flex flex-col items-center justify-center bg-Dark10 gap-3 col-span-2 md:col-span-1"
+          >
+            <p class="text-sm text-center">BAHASA ARAB</p>
+            <h1 class="text-2xl text-center">76</h1>
+          </div>
+          <div
+            class="p-3 w-full flex flex-col items-center justify-center bg-Dark10 gap-3 col-span-2 md:col-span-1"
+          >
+            <p class="text-sm text-center">Lihat yang lain</p>
+            <h1 class="text-2xl text-center text-orange-400">>>></h1>
           </div>
         </div>
       </div>
-      <div
-        class="jumlah mt-5 border-2 rounded-md grid grid-cols-2 grid-rows-4 gap-3 p-3"
-      >
-        <div class="santri bg-Dark10 p-3 w-full">
-          <p class="text-sm text-center">SANTRI</p>
-          <h1 class="text-2xl text-center">76</h1>
-        </div>
-        <div class="santri bg-Dark10 p-3 w-full">
-          <p class="text-sm text-center">SANTRI</p>
-          <h1 class="text-2xl text-center">76</h1>
-        </div>
-        <div class="santri bg-Dark10 p-3 w-full">
-          <p class="text-sm text-center">SANTRI</p>
-          <h1 class="text-2xl text-center">76</h1>
-        </div>
-        <div class="santri bg-Dark10 p-3 w-full">
-          <p class="text-sm text-center">SANTRI</p>
-          <h1 class="text-2xl text-center">76</h1>
-        </div>
-
-        <div class="santri bg-Dark10 p-3 w-full">
-          <p class="text-sm text-center">SANTRI</p>
-          <h1 class="text-2xl text-center">76</h1>
-        </div>
-        <div class="santri bg-Dark10 p-3 w-full">
-          <p class="text-sm text-center">SANTRI</p>
-          <h1 class="text-2xl text-center">76</h1>
+    </section>
+    <!-- end section home -->
+    <section>
+      <div class="bungkus">
+        <div class="container border-2 border-biru p-3 rounded-md">
+          <div class="reason bg-Dark10 p-3 flex items-center">
+            <h1 class="text-2xl font-bold">
+              Alasan Mengapa Harus SMA IT HSI IDN
+            </h1>
+          </div>
         </div>
       </div>
     </section>

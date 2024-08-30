@@ -1,9 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @layer components {
-    .bungkus{
-        @apply px-4 md:mx-10
-    }
+  .bungkus {
+    @apply px-4 mt-5 md:mx-10 w-full;
+  }
+  .cardnomor {
+    @apply bg-Dark10 p-3 w-full flex flex-col items-center justify-center;
+  }
 }
