@@ -10,8 +10,9 @@ module.exports = {
       colors:{
         'Dark10': '#1A1A1A',
         'bgbody': '#0F0F0F',
-        'biru': '#03346E',
-        'hoverbtn': '#4589DA'
+        'biru': '#3fa2f6',
+        'hoverbtn': '#195b94',
+        'border': '#3fa2f6',
       },
     },
   },

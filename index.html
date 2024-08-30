@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -12,15 +12,12 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
       rel="stylesheet"
     />
-    <style>
-      * {
-        font-family: inter;
-      }
-    </style>
   </head>
-  <body class="bg-[#0F0F0F] text-white font-biasa">
-    <header class="px-4 pt-10 md:mx-10 ">
-      <nav class="bg-Dark10 p-3 flex justify-between rounded-md relative">
+  <body class="bg-slate-900 text-white font-biasa">
+    <header class="px-4">
+      <nav
+        class="bg-Dark10 p-3 flex justify-between rounded-md relative bungkus mt-5"
+      >
         <div class="logo flex items-center gap-3">
           <img
             src="img/logo.png"
@@ -119,12 +116,12 @@
         </aside>
       </nav>
     </header>
-
-    <section>
+    <!-- start section home -->
+    <section class="home">
       <div class="bungkus flex flex-col gap-3">
-        <div class="container flex gap-3 justify-between">
-          <div class="rounded-md bg-Dark10 p-3 w-full">
-            <div class="content flex flex-col gap-2">
+        <div class="flex gap-3 justify-between">
+          <div class="rounded-md bg-Dark10 p-3 w-full flex items-center">
+            <div class="content flex flex-col gap-4">
               <h1 class="text-xl font-bold font-Elegant">SMA IT HSI IDN</h1>
               <p class="text-sm">
                 Ini adalah sekolah menengah atas yang menggabungkan pendidikan
@@ -145,49 +142,49 @@
             </div>
           </div>
           <div
-            class="hidden image border-2 border-biru p-3 rounded-md md:flex flex-col gap-3 w-1/4"
+            class="hidden border-2 border-biru p-3 rounded-md md:flex flex-col gap-3 w-1/4"
           >
-            <img src="img/idn.jpeg" alt="" class="w-fit" />
-            <img src="img/hsi.png" alt="" class="w-fit" />
+            <img src="img/idn.jpeg" alt="IDN" class="w-full" />
+            <img src="img/hsi.png" alt="HSI" class="w-full" />
           </div>
         </div>
 
         <div
-          class="jumlah border-2 border-biru rounded-md grid grid-cols-2 md:grid-cols-6 md:grid-rows-1 grid-rows-4 gap-3 p-3"
+          class="border-2 border-biru rounded-md grid grid-cols-2 md:grid-cols-6 md:grid-rows-1 grid-rows-4 gap-3 p-3"
         >
           <div
-            class="p-3 w-full flex flex-col items-center justify-center bg-Dark10 gap-3"
+            class="p-3 w-full flex flex-col items-center justify-center bg-Dark10 gap-3 rounded-md"
           >
             <p class="text-sm text-center">TAHFIDZ</p>
             <h1 class="text-2xl text-center">76</h1>
           </div>
           <div
-            class="p-3 w-full flex flex-col items-center justify-center bg-Dark10 gap-3"
+            class="p-3 w-full flex flex-col items-center justify-center bg-Dark10 gap-3 rounded-md"
           >
             <p class="text-sm text-center">DINIYYAH</p>
             <h1 class="text-2xl text-center">76</h1>
           </div>
           <div
-            class="p-3 w-full flex flex-col items-center justify-center bg-Dark10 gap-3"
+            class="p-3 w-full flex flex-col items-center justify-center bg-Dark10 gap-3 rounded-md"
           >
             <p class="text-sm text-center">IT</p>
             <h1 class="text-2xl text-center">76</h1>
           </div>
           <div
-            class="p-3 w-full flex flex-col items-center justify-center bg-Dark10 gap-3"
+            class="p-3 w-full flex flex-col items-center justify-center bg-Dark10 gap-3 rounded-md"
           >
             <p class="text-sm text-center">BAHASA INGGRIS</p>
             <h1 class="text-2xl text-center">76</h1>
           </div>
 
           <div
-            class="p-3 w-full flex flex-col items-center justify-center bg-Dark10 gap-3 col-span-2 md:col-span-1"
+            class="p-3 w-full flex flex-col items-center justify-center bg-Dark10 gap-3 rounded-md col-span-2 md:col-span-1"
           >
             <p class="text-sm text-center">BAHASA ARAB</p>
             <h1 class="text-2xl text-center">76</h1>
           </div>
           <div
-            class="p-3 w-full flex flex-col items-center justify-center bg-Dark10 gap-3 col-span-2 md:col-span-1"
+            class="p-3 w-full flex flex-col items-center justify-center bg-Dark10 gap-3 rounded-md col-span-2 md:col-span-1"
           >
             <p class="text-sm text-center">Lihat yang lain</p>
             <h1 class="text-2xl text-center text-orange-400">>>></h1>
@@ -196,26 +193,421 @@
       </div>
     </section>
     <!-- end section home -->
-    <section>
+    <!-- start section reason -->
+    <section class="reason">
       <div class="bungkus">
-        <div class="container border-2 border-biru p-3 rounded-md">
-          <div class="reason bg-Dark10 p-3 flex items-center">
+        <div class="border-2 border-biru p-3 rounded-md">
+          <div class="reason bg-Dark10 p-5 flex items-center w-full">
             <h1 class="text-2xl font-bold">
-              Alasan Mengapa Harus SMA IT HSI IDN
+              Alasan Mengapa Harus SMA HSI IDN IT HSI IDN
             </h1>
+          </div>
+          <div
+            class="value flex flex-col md:flex-row items-center w-full mt-3 gap-4"
+          >
+            <div class="content bg-Dark10 p-3 flex flex-col gap-4 md:w-1/4">
+              <h2 class="text-[20px] md:text-[22px] font-Elegant">
+                Lorem ipsum dolor sit amet.
+              </h2>
+              <p class="text-[14px] md:text-[16px]">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Tenetur dignissimos dolor minima quae voluptatem, ratione
+                delectus odit? Porro, debitis nemo.
+              </p>
+              <div class="flex items-center gap-3">
+                <button
+                  class="bg-blue-600 rounded-full w-10 h-10 flex items-center justify-center hover:bg-transparent border-2 border-blue-600"
+                >
+                  <svg
+                    class="w-4 h-4 fill-white"
+                    viewBox="0 0 28 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.625 4.375L22.75 4.375C22.9821 4.375 23.2046 4.46719 23.3687 4.63128C23.5328 4.79538 23.625 5.01794 23.625 5.25V18.375C23.625 18.8582 23.2332 19.25 22.75 19.25C22.2668 19.25 21.875 18.8582 21.875 18.375V7.36244L5.86872 23.3687C5.52701 23.7104 4.97299 23.7104 4.63128 23.3687C4.28957 23.027 4.28957 22.473 4.63128 22.1313L20.6376 6.125L9.625 6.125C9.14175 6.125 8.75 5.73325 8.75 5.25C8.75 4.76675 9.14175 4.375 9.625 4.375Z"
+                    />
+                  </svg>
+                </button>
+                <p>Learn More</p>
+              </div>
+            </div>
+            <div class="content bg-Dark10 p-3 flex flex-col gap-4 md:w-1/4">
+              <h2 class="text-[20px] md:text-[22px] font-Elegant">
+                Lorem ipsum dolor sit amet.
+              </h2>
+              <p class="text-[14px] md:text-[16px]">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Tenetur dignissimos dolor minima quae voluptatem, ratione
+                delectus odit? Porro, debitis nemo.
+              </p>
+              <div class="flex items-center gap-3">
+                <button
+                  class="bg-blue-600 rounded-full w-10 h-10 flex items-center justify-center hover:bg-transparent border-2 border-blue-600"
+                >
+                  <svg
+                    class="w-4 h-4 fill-white"
+                    viewBox="0 0 28 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.625 4.375L22.75 4.375C22.9821 4.375 23.2046 4.46719 23.3687 4.63128C23.5328 4.79538 23.625 5.01794 23.625 5.25V18.375C23.625 18.8582 23.2332 19.25 22.75 19.25C22.2668 19.25 21.875 18.8582 21.875 18.375V7.36244L5.86872 23.3687C5.52701 23.7104 4.97299 23.7104 4.63128 23.3687C4.28957 23.027 4.28957 22.473 4.63128 22.1313L20.6376 6.125L9.625 6.125C9.14175 6.125 8.75 5.73325 8.75 5.25C8.75 4.76675 9.14175 4.375 9.625 4.375Z"
+                    />
+                  </svg>
+                </button>
+                <p>Learn More</p>
+              </div>
+            </div>
+            <div class="content bg-Dark10 p-3 flex flex-col gap-4 md:w-1/4">
+              <h2 class="text-[20px] md:text-[22px] font-Elegant">
+                Lorem ipsum dolor sit amet.
+              </h2>
+              <p class="text-[14px] md:text-[16px]">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Tenetur dignissimos dolor minima quae voluptatem, ratione
+                delectus odit? Porro, debitis nemo.
+              </p>
+              <div class="flex items-center gap-3">
+                <button
+                  class="bg-blue-600 rounded-full w-10 h-10 flex items-center justify-center hover:bg-transparent border-2 border-blue-600"
+                >
+                  <svg
+                    class="w-4 h-4 fill-white"
+                    viewBox="0 0 28 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.625 4.375L22.75 4.375C22.9821 4.375 23.2046 4.46719 23.3687 4.63128C23.5328 4.79538 23.625 5.01794 23.625 5.25V18.375C23.625 18.8582 23.2332 19.25 22.75 19.25C22.2668 19.25 21.875 18.8582 21.875 18.375V7.36244L5.86872 23.3687C5.52701 23.7104 4.97299 23.7104 4.63128 23.3687C4.28957 23.027 4.28957 22.473 4.63128 22.1313L20.6376 6.125L9.625 6.125C9.14175 6.125 8.75 5.73325 8.75 5.25C8.75 4.76675 9.14175 4.375 9.625 4.375Z"
+                    />
+                  </svg>
+                </button>
+                <p>Learn More</p>
+              </div>
+            </div>
+            <div class="content bg-Dark10 p-3 flex flex-col gap-4 md:w-1/4">
+              <h2 class="text-[20px] md:text-[22px] font-Elegant">
+                Lorem ipsum dolor sit amet.
+              </h2>
+              <p class="text-[14px] md:text-[16px]">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Tenetur dignissimos dolor minima quae voluptatem, ratione
+                delectus odit? Porro, debitis nemo.
+              </p>
+              <div class="flex items-center gap-3">
+                <button
+                  class="bg-blue-600 rounded-full w-10 h-10 flex items-center justify-center hover:bg-transparent border-2 border-blue-600"
+                >
+                  <svg
+                    class="w-4 h-4 fill-white"
+                    viewBox="0 0 28 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.625 4.375L22.75 4.375C22.9821 4.375 23.2046 4.46719 23.3687 4.63128C23.5328 4.79538 23.625 5.01794 23.625 5.25V18.375C23.625 18.8582 23.2332 19.25 22.75 19.25C22.2668 19.25 21.875 18.8582 21.875 18.375V7.36244L5.86872 23.3687C5.52701 23.7104 4.97299 23.7104 4.63128 23.3687C4.28957 23.027 4.28957 22.473 4.63128 22.1313L20.6376 6.125L9.625 6.125C9.14175 6.125 8.75 5.73325 8.75 5.25C8.75 4.76675 9.14175 4.375 9.625 4.375Z"
+                    />
+                  </svg>
+                </button>
+                <p>Learn More</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- end section reason -->
+    <!-- start section learn-->
+    <section class="learn">
+      <div class="bungkus">
+        <div class="border-2 border-biru p-3 rounded-md flex flex-col gap-5">
+          <div class="reason bg-Dark10 p-5 flex items-center w-full">
+            <h1 class="text-2xl font-bold">Pembelajaran di SMA IT HSI IDN</h1>
+          </div>
+          <div class="value grid md:grid-cols-3 md:grid-rows-2 gap-4">
+            <div class="content bg-Dark10 p-3 flex flex-col gap-4">
+              <div class="flex items-center gap-2">
+                <svg
+                  class="w-8 h-8 fill-biru"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.04537 5.49167L5.49167 4.04537C6.85525 2.68179 7.53704 2 8.38426 2C9.23148 2 9.91327 2.68179 11.2769 4.04537L8.86636 6.45586L4.04537 11.2769L4.04536 11.2768C2.68179 9.91327 2 9.23148 2 8.38426C2 7.53704 2.68179 6.85525 4.04537 5.49167L4.04537 5.49167Z"
+                  />
+                  <path
+                    d="M19.9546 18.5083L18.5083 19.9546C17.1448 21.3182 16.463 22 15.6157 22C14.7685 22 14.0867 21.3182 12.7232 19.9546L12.7231 19.9546L17.5441 15.1336L19.9546 12.7231C21.3182 14.0867 22 14.7685 22 15.6157C22 16.463 21.3182 17.1448 19.9546 18.5083Z"
+                  />
+                  <path
+                    d="M11.4001 18.1612L11.4001 18.1612L18.796 10.7653C17.7894 10.3464 16.5972 9.6582 15.4697 8.53068C14.342 7.40298 13.6537 6.21058 13.2348 5.2039L5.83882 12.5999L5.83879 12.5999C5.26166 13.1771 4.97307 13.4657 4.7249 13.7838C4.43213 14.1592 4.18114 14.5653 3.97634 14.995C3.80273 15.3593 3.67368 15.7465 3.41556 16.5208L2.05445 20.6042C1.92743 20.9852 2.0266 21.4053 2.31063 21.6894C2.59466 21.9734 3.01478 22.0726 3.39584 21.9456L7.47918 20.5844C8.25351 20.3263 8.6407 20.1973 9.00498 20.0237C9.43469 19.8189 9.84082 19.5679 10.2162 19.2751C10.5343 19.0269 10.823 18.7383 11.4001 18.1612Z"
+                  />
+                  <path
+                    d="M20.8482 8.71306C22.3839 7.17735 22.3839 4.68748 20.8482 3.15178C19.3125 1.61607 16.8226 1.61607 15.2869 3.15178L14.3999 4.03882C14.4121 4.0755 14.4246 4.11268 14.4377 4.15035C14.7628 5.0875 15.3763 6.31601 16.5303 7.47002C17.6843 8.62403 18.9128 9.23749 19.85 9.56262C19.8875 9.57563 19.9245 9.58817 19.961 9.60026L20.8482 8.71306Z"
+                  />
+                </svg>
 
-    <!-- JavaScript -->
-    <script>
-      // Toggle Menu Functionality
-      document.getElementById("menubtn").addEventListener("click", function () {
-        const mobileMenu = document.getElementById("mobileMenu");
-        mobileMenu.classList.toggle("scale-y-0");
-        mobileMenu.classList.toggle("scale-y-100");
-      });
-    </script>
+                <h2 class="text-[20px] md:text-[22px] font-Elegant">
+                  TEKNOLOGI INFORMASI
+                </h2>
+              </div>
+              <h3>Teknik Komputer Dan Jaringan</h3>
+
+              <p class="text-[14px] md:text-[16px]">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Tenetur dignissimos dolor minima quae voluptatem, ratione
+                delectus odit? Porro, debitis nemo.
+              </p>
+              <div class="flex items-center gap-3">
+                <button
+                  class="bg-blue-600 rounded-full w-10 h-10 flex items-center justify-center hover:bg-transparent border-2 border-blue-600"
+                >
+                  <svg
+                    class="w-4 h-4 fill-white"
+                    viewBox="0 0 28 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.625 4.375L22.75 4.375C22.9821 4.375 23.2046 4.46719 23.3687 4.63128C23.5328 4.79538 23.625 5.01794 23.625 5.25V18.375C23.625 18.8582 23.2332 19.25 22.75 19.25C22.2668 19.25 21.875 18.8582 21.875 18.375V7.36244L5.86872 23.3687C5.52701 23.7104 4.97299 23.7104 4.63128 23.3687C4.28957 23.027 4.28957 22.473 4.63128 22.1313L20.6376 6.125L9.625 6.125C9.14175 6.125 8.75 5.73325 8.75 5.25C8.75 4.76675 9.14175 4.375 9.625 4.375Z"
+                    />
+                  </svg>
+                </button>
+                <p>Learn More</p>
+              </div>
+            </div>
+            <div class="content bg-Dark10 p-3 flex flex-col gap-4">
+              <div class="flex items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-8 h-8 fill-biru"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M152,96H104a8,8,0,0,0-8,8v48a8,8,0,0,0,8,8h48a8,8,0,0,0,8-8V104A8,8,0,0,0,152,96Zm-8,48H112V112h32Zm88,0H216V112h16a8,8,0,0,0,0-16H216V56a16,16,0,0,0-16-16H160V24a8,8,0,0,0-16,0V40H112V24a8,8,0,0,0-16,0V40H56A16,16,0,0,0,40,56V96H24a8,8,0,0,0,0,16H40v32H24a8,8,0,0,0,0,16H40v40a16,16,0,0,0,16,16H96v16a8,8,0,0,0,16,0V216h32v16a8,8,0,0,0,16,0V216h40a16,16,0,0,0,16-16V160h16a8,8,0,0,0,0-16Zm-32,56H56V56H200v95.87s0,.09,0,.13,0,.09,0,.13V200Z"
+                  ></path>
+                </svg>
+
+                <h2 class="text-[20px] md:text-[22px] font-Elegant">
+                  TEKNOLOGI INFORMASI
+                </h2>
+              </div>
+              <h3>Rekayasa Perangkat Lunak</h3>
+
+              <p class="text-[14px] md:text-[16px]">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Tenetur dignissimos dolor minima quae voluptatem, ratione
+                delectus odit? Porro, debitis nemo.
+              </p>
+              <div class="flex items-center gap-3">
+                <button
+                  class="bg-blue-600 rounded-full w-10 h-10 flex items-center justify-center hover:bg-transparent border-2 border-blue-600"
+                >
+                  <svg
+                    class="w-4 h-4 fill-white"
+                    viewBox="0 0 28 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.625 4.375L22.75 4.375C22.9821 4.375 23.2046 4.46719 23.3687 4.63128C23.5328 4.79538 23.625 5.01794 23.625 5.25V18.375C23.625 18.8582 23.2332 19.25 22.75 19.25C22.2668 19.25 21.875 18.8582 21.875 18.375V7.36244L5.86872 23.3687C5.52701 23.7104 4.97299 23.7104 4.63128 23.3687C4.28957 23.027 4.28957 22.473 4.63128 22.1313L20.6376 6.125L9.625 6.125C9.14175 6.125 8.75 5.73325 8.75 5.25C8.75 4.76675 9.14175 4.375 9.625 4.375Z"
+                    />
+                  </svg>
+                </button>
+                <p>Learn More</p>
+              </div>
+            </div>
+            <div class="content bg-Dark10 p-3 flex flex-col gap-4">
+              <div class="flex items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-8 h-8 fill-biru"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M208,24H72A32,32,0,0,0,40,56V224a8,8,0,0,0,8,8H192a8,8,0,0,0,0-16H56a16,16,0,0,1,16-16H208a8,8,0,0,0,8-8V32A8,8,0,0,0,208,24ZM120,40h48v72L148.79,97.6a8,8,0,0,0-9.6,0L120,112Zm80,144H72a31.82,31.82,0,0,0-16,4.29V56A16,16,0,0,1,72,40h32v88a8,8,0,0,0,12.8,6.4L144,114l27.21,20.4A8,8,0,0,0,176,136a8,8,0,0,0,8-8V40h16Z"
+                  ></path>
+                </svg>
+
+                <h2 class="text-[20px] md:text-[22px] font-Elegant">
+                  TAFIDZUL QUR'AN
+                </h2>
+              </div>
+              <h3>Hafidzul Quran</h3>
+
+              <p class="text-[14px] md:text-[16px]">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Tenetur dignissimos dolor minima quae voluptatem, ratione
+                delectus odit? Porro, debitis nemo.
+              </p>
+              <div class="flex items-center gap-3">
+                <button
+                  class="bg-blue-600 rounded-full w-10 h-10 flex items-center justify-center hover:bg-transparent border-2 border-blue-600"
+                >
+                  <svg
+                    class="w-4 h-4 fill-white"
+                    viewBox="0 0 28 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.625 4.375L22.75 4.375C22.9821 4.375 23.2046 4.46719 23.3687 4.63128C23.5328 4.79538 23.625 5.01794 23.625 5.25V18.375C23.625 18.8582 23.2332 19.25 22.75 19.25C22.2668 19.25 21.875 18.8582 21.875 18.375V7.36244L5.86872 23.3687C5.52701 23.7104 4.97299 23.7104 4.63128 23.3687C4.28957 23.027 4.28957 22.473 4.63128 22.1313L20.6376 6.125L9.625 6.125C9.14175 6.125 8.75 5.73325 8.75 5.25C8.75 4.76675 9.14175 4.375 9.625 4.375Z"
+                    />
+                  </svg>
+                </button>
+                <p>Learn More</p>
+              </div>
+            </div>
+            <div class="content bg-Dark10 p-3 flex flex-col gap-4">
+              <div class="flex items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-8 h-8 fill-biru"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M69.12,94.15,28.5,128l40.62,33.85a8,8,0,1,1-10.24,12.29l-48-40a8,8,0,0,1,0-12.29l48-40a8,8,0,0,1,10.24,12.3Zm176,27.7-48-40a8,8,0,1,0-10.24,12.3L227.5,128l-40.62,33.85a8,8,0,1,0,10.24,12.29l48-40a8,8,0,0,0,0-12.29ZM162.73,32.48a8,8,0,0,0-10.25,4.79l-64,176a8,8,0,0,0,4.79,10.26A8.14,8.14,0,0,0,96,224a8,8,0,0,0,7.52-5.27l64-176A8,8,0,0,0,162.73,32.48Z"
+                  ></path>
+                </svg>
+
+                <h2 class="text-[20px] md:text-[22px] font-Elegant">
+                  TEKNOLOGI INFORMASI
+                </h2>
+              </div>
+              <h3>Web Devlopment</h3>
+
+              <p class="text-[14px] md:text-[16px]">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Tenetur dignissimos dolor minima quae voluptatem, ratione
+                delectus odit? Porro, debitis nemo.
+              </p>
+              <div class="flex items-center gap-3">
+                <button
+                  class="bg-blue-600 rounded-full w-10 h-10 flex items-center justify-center hover:bg-transparent border-2 border-blue-600"
+                >
+                  <svg
+                    class="w-4 h-4 fill-white"
+                    viewBox="0 0 28 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.625 4.375L22.75 4.375C22.9821 4.375 23.2046 4.46719 23.3687 4.63128C23.5328 4.79538 23.625 5.01794 23.625 5.25V18.375C23.625 18.8582 23.2332 19.25 22.75 19.25C22.2668 19.25 21.875 18.8582 21.875 18.375V7.36244L5.86872 23.3687C5.52701 23.7104 4.97299 23.7104 4.63128 23.3687C4.28957 23.027 4.28957 22.473 4.63128 22.1313L20.6376 6.125L9.625 6.125C9.14175 6.125 8.75 5.73325 8.75 5.25C8.75 4.76675 9.14175 4.375 9.625 4.375Z"
+                    />
+                  </svg>
+                </button>
+                <p>Learn More</p>
+              </div>
+            </div>
+            <div class="content bg-Dark10 p-3 flex flex-col gap-4">
+              <div class="flex items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-8 h-8 fill-biru"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M247.15,212.42l-56-112a8,8,0,0,0-14.31,0l-21.71,43.43A88,88,0,0,1,108,126.93,103.65,103.65,0,0,0,135.69,64H160a8,8,0,0,0,0-16H104V32a8,8,0,0,0-16,0V48H32a8,8,0,0,0,0,16h87.63A87.76,87.76,0,0,1,96,116.35a87.74,87.74,0,0,1-19-31,8,8,0,1,0-15.08,5.34A103.63,103.63,0,0,0,84,127a87.55,87.55,0,0,1-52,17,8,8,0,0,0,0,16,103.46,103.46,0,0,0,64-22.08,104.18,104.18,0,0,0,51.44,21.31l-26.6,53.19a8,8,0,0,0,14.31,7.16L148.94,192h70.11l13.79,27.58A8,8,0,0,0,240,224a8,8,0,0,0,7.15-11.58ZM156.94,176,184,121.89,211.05,176Z"
+                  ></path>
+                </svg>
+
+                <h2 class="text-[20px] md:text-[22px] font-Elegant">BAHASA</h2>
+              </div>
+              <h3>Pendalaman Bahasa</h3>
+
+              <p class="text-[14px] md:text-[16px]">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Tenetur dignissimos dolor minima quae voluptatem, ratione
+                delectus odit? Porro, debitis nemo.
+              </p>
+              <div class="flex items-center gap-3">
+                <button
+                  class="bg-blue-600 rounded-full w-10 h-10 flex items-center justify-center hover:bg-transparent border-2 border-blue-600"
+                >
+                  <svg
+                    class="w-4 h-4 fill-white"
+                    viewBox="0 0 28 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.625 4.375L22.75 4.375C22.9821 4.375 23.2046 4.46719 23.3687 4.63128C23.5328 4.79538 23.625 5.01794 23.625 5.25V18.375C23.625 18.8582 23.2332 19.25 22.75 19.25C22.2668 19.25 21.875 18.8582 21.875 18.375V7.36244L5.86872 23.3687C5.52701 23.7104 4.97299 23.7104 4.63128 23.3687C4.28957 23.027 4.28957 22.473 4.63128 22.1313L20.6376 6.125L9.625 6.125C9.14175 6.125 8.75 5.73325 8.75 5.25C8.75 4.76675 9.14175 4.375 9.625 4.375Z"
+                    />
+                  </svg>
+                </button>
+                <p>Learn More</p>
+              </div>
+            </div>
+            <div class="content bg-Dark10 p-3 flex flex-col gap-4">
+              <div class="flex items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-8 h-8 fill-biru"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M232,48H160a40,40,0,0,0-32,16A40,40,0,0,0,96,48H24a8,8,0,0,0-8,8V200a8,8,0,0,0,8,8H96a24,24,0,0,1,24,24,8,8,0,0,0,16,0,24,24,0,0,1,24-24h72a8,8,0,0,0,8-8V56A8,8,0,0,0,232,48ZM96,192H32V64H96a24,24,0,0,1,24,24V200A39.81,39.81,0,0,0,96,192Zm128,0H160a39.81,39.81,0,0,0-24,8V88a24,24,0,0,1,24-24h64ZM160,88h40a8,8,0,0,1,0,16H160a8,8,0,0,1,0-16Zm48,40a8,8,0,0,1-8,8H160a8,8,0,0,1,0-16h40A8,8,0,0,1,208,128Zm0,32a8,8,0,0,1-8,8H160a8,8,0,0,1,0-16h40A8,8,0,0,1,208,160Z"
+                  ></path>
+                </svg>
+
+                <h2 class="text-[20px] md:text-[22px] font-Elegant">
+                  DINIYYAH
+                </h2>
+              </div>
+              <h3>Aqidah, Fiqh, Tafsir</h3>
+
+              <p class="text-[14px] md:text-[16px]">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Tenetur dignissimos dolor minima quae voluptatem, ratione
+                delectus odit? Porro, debitis nemo.
+              </p>
+              <div class="flex items-center gap-3">
+                <button
+                  class="bg-blue-600 rounded-full w-10 h-10 flex items-center justify-center hover:bg-transparent border-2 border-blue-600"
+                >
+                  <svg
+                    class="w-4 h-4 fill-white"
+                    viewBox="0 0 28 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.625 4.375L22.75 4.375C22.9821 4.375 23.2046 4.46719 23.3687 4.63128C23.5328 4.79538 23.625 5.01794 23.625 5.25V18.375C23.625 18.8582 23.2332 19.25 22.75 19.25C22.2668 19.25 21.875 18.8582 21.875 18.375V7.36244L5.86872 23.3687C5.52701 23.7104 4.97299 23.7104 4.63128 23.3687C4.28957 23.027 4.28957 22.473 4.63128 22.1313L20.6376 6.125L9.625 6.125C9.14175 6.125 8.75 5.73325 8.75 5.25C8.75 4.76675 9.14175 4.375 9.625 4.375Z"
+                    />
+                  </svg>
+                </button>
+                <p>Learn More</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section learn -->
+    <!-- start section muallim -->
+    <section></section>
+    <!-- end section muallim -->
+
+    <script src="script.js"></script>
   </body>
 </html>
