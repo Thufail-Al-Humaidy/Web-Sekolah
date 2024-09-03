@@ -8,4 +8,24 @@
   .cardnomor {
     @apply bg-Dark10 p-3 w-full flex flex-col items-center justify-center;
   }
+  /* .teams .title::after {
+    @apply content-["who with me"] text-gray-400;
+  }
+
+  .owl-dots {
+    @apply text-center mt-4;
+  }
+
+  .owl-dot {
+    @apply h-3 w-3 mx-2 rounded-full border-2 border-red-500 transition duration-300 ease-in-out;
+  }
+
+  .owl-dot.active {
+    @apply w-10 rounded-md bg-red-500;
+  }
+
+  .owl-dot.active,
+  .owl-dot:hover {
+    @apply bg-red-500;
+  } */
 }
