@@ -12,40 +12,9 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
       rel="stylesheet"
     />
-    <style>
-      .profil {
-        flex: 1;
-        min-width: 300px;
-        max-width: 500px;
-      }
-      .custom-scrollbar::-webkit-scrollbar {
-        height: 5px;
-      }
-
-      .custom-scrollbar::-webkit-scrollbar-thumb {
-        background-color: #15ff00;
-        border-radius: 10px;
-      }
-
-      .custom-scrollbar::-webkit-scrollbar-track {
-        background-color: #3fa2f6;
-      }
-      .custom-scrollbar-body::-webkit-scrollbar {
-        height: 5px;
-        width: 7px;
-      }
-
-      .custom-scrollbar-body::-webkit-scrollbar-thumb {
-        background-color: #3fa2f6;
-        border-radius: 10px;
-      }
-
-      .custom-scrollbar-body::-webkit-scrollbar-track {
-        background-color: #000000;
-      }
-    </style>
+    <style></style>
   </head>
-  <body class="bg-slate-900 text-white font-biasa custom-scrollbar-body">
+  <body class="bg-blue-950 text-white font-biasa custom-scrollbar-body">
     <header class="flex items-center p-3 md:p-0">
       <nav
         class="bg-Dark10 p-3 flex justify-between rounded-md relative container mx-auto mt-5"
@@ -58,30 +27,20 @@
           />
           <a href="#" class="text-[16px] font-Elegant">SMA IT HSI IDN</a>
         </div>
-        <ul class="hidden md:flex gap-[14px]">
-          <li
-            class="bg-biru px-3 py-2 rounded-md hover:bg-hoverbtn transition-all duration-200"
-          >
+        <ul class="hidden md:flex gap-[14px] items-center">
+          <li class="button-kotak">
             <a href="#">Home</a>
           </li>
-          <li
-            class="bg-biru px-3 py-2 rounded-md hover:bg-hoverbtn transition-all duration-200"
-          >
+          <li class="button-kotak">
             <a href="#">About</a>
           </li>
-          <li
-            class="bg-biru px-3 py-2 rounded-md hover:bg-hoverbtn transition-all duration-200"
-          >
+          <li class="button-kotak">
             <a href="#">Services</a>
           </li>
-          <li
-            class="bg-biru px-3 py-2 rounded-md hover:bg-hoverbtn transition-all duration-200"
-          >
+          <li class="button-kotak">
             <a href="#">Projects</a>
           </li>
-          <li
-            class="bg-biru px-3 py-2 rounded-md hover:bg-hoverbtn transition-all duration-200"
-          >
+          <li class="button-kotak">
             <a href="#">Careers</a>
           </li>
           <li
@@ -114,29 +73,19 @@
           class="md:hidden absolute left-0 right-0 top-full text-white bg-Dark10 space-y-2 p-4 transform scale-y-0 origin-top transition-transform duration-500 ease-in-out"
         >
           <ul class="flex flex-col text-center w-full gap-3">
-            <li
-              class="bg-biru px-3 py-2 rounded-md hover:bg-hoverbtn transition-all duration-200"
-            >
+            <li class="button-kotak">
               <a href="#">Home</a>
             </li>
-            <li
-              class="bg-biru px-3 py-2 rounded-md hover:bg-hoverbtn transition-all duration-200"
-            >
+            <li class="button-kotak">
               <a href="#">About</a>
             </li>
-            <li
-              class="bg-biru px-3 py-2 rounded-md hover:bg-hoverbtn transition-all duration-200"
-            >
+            <li class="button-kotak">
               <a href="#">Services</a>
             </li>
-            <li
-              class="bg-biru px-3 py-2 rounded-md hover:bg-hoverbtn transition-all duration-200"
-            >
+            <li class="button-kotak">
               <a href="#">Projects</a>
             </li>
-            <li
-              class="bg-biru px-3 py-2 rounded-md hover:bg-hoverbtn transition-all duration-200"
-            >
+            <li class="button-kotak">
               <a href="#">Careers</a>
             </li>
             <li
@@ -149,7 +98,7 @@
       </nav>
     </header>
     <!-- start section home -->
-    <section class="home mt-5">
+    <section class="home mt-5" id="home">
       <div class="container mx-auto flex flex-col gap-5 p-3 md:p-0">
         <div class="flex gap-3 justify-between">
           <div class="rounded-md bg-Dark10 p-3 w-full flex items-center">
@@ -160,16 +109,8 @@
                 berbasis Islam dengan teknologi informasi (IT).
               </p>
               <div class="btn flex gap-2">
-                <button
-                  class="px-2 py-1 rounded-md bg-biru hover:bg-hoverbtn transition-all duration-300"
-                >
-                  Mengenal HSI
-                </button>
-                <button
-                  class="px-2 py-1 rounded-md bg-biru hover:bg-hoverbtn transition-all duration-300"
-                >
-                  Mengenal IDN
-                </button>
+                <button class="button-kotak">Mengenal HSI</button>
+                <button class="button-kotak">Mengenal IDN</button>
               </div>
             </div>
           </div>
@@ -226,7 +167,7 @@
     </section>
     <!-- end section home -->
     <!-- start section reason -->
-    <section class="reason mt-6">
+    <section class="reason mt-6" id="reason">
       <div class="container mx-auto p-3 md:p-0">
         <div class="border-2 border-biru p-3 rounded-md">
           <div class="reason bg-Dark10 p-5 flex items-center w-full">
@@ -237,10 +178,8 @@
           <div
             class="value flex flex-col md:flex-row items-center w-full mt-3 gap-4"
           >
-            <div class="content bg-Dark10 p-3 flex flex-col gap-4 md:w-1/4">
-              <h2 class="text-[20px] md:text-[22px] font-Elegant">
-                Lorem ipsum dolor sit amet.
-              </h2>
+            <div class="content-reason">
+              <h2>Lorem ipsum dolor sit amet.</h2>
               <p class="text-[14px] md:text-[16px]">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Tenetur dignissimos dolor minima quae voluptatem, ratione
@@ -266,10 +205,8 @@
                 <p>Learn More</p>
               </div>
             </div>
-            <div class="content bg-Dark10 p-3 flex flex-col gap-4 md:w-1/4">
-              <h2 class="text-[20px] md:text-[22px] font-Elegant">
-                Lorem ipsum dolor sit amet.
-              </h2>
+            <div class="content-reason">
+              <h2>Lorem ipsum dolor sit amet.</h2>
               <p class="text-[14px] md:text-[16px]">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Tenetur dignissimos dolor minima quae voluptatem, ratione
@@ -295,10 +232,8 @@
                 <p>Learn More</p>
               </div>
             </div>
-            <div class="content bg-Dark10 p-3 flex flex-col gap-4 md:w-1/4">
-              <h2 class="text-[20px] md:text-[22px] font-Elegant">
-                Lorem ipsum dolor sit amet.
-              </h2>
+            <div class="content-reason">
+              <h2>Lorem ipsum dolor sit amet.</h2>
               <p class="text-[14px] md:text-[16px]">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Tenetur dignissimos dolor minima quae voluptatem, ratione
@@ -324,10 +259,8 @@
                 <p>Learn More</p>
               </div>
             </div>
-            <div class="content bg-Dark10 p-3 flex flex-col gap-4 md:w-1/4">
-              <h2 class="text-[20px] md:text-[22px] font-Elegant">
-                Lorem ipsum dolor sit amet.
-              </h2>
+            <div class="content-reason">
+              <h2>Lorem ipsum dolor sit amet.</h2>
               <p class="text-[14px] md:text-[16px]">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Tenetur dignissimos dolor minima quae voluptatem, ratione
@@ -359,20 +292,16 @@
     </section>
     <!-- end section reason -->
     <!-- start section learn-->
-    <section class="learn mt-6">
+    <section class="learn mt-6" id="learn">
       <div class="container mx-auto p-3 md:p-0">
         <div class="border-2 border-biru p-3 rounded-md flex flex-col gap-5">
-          <div class="reason bg-Dark10 p-5 flex items-center w-full">
+          <div class="reason bg-Dark10 p-5 flex items-center w-full rounded-md">
             <h1 class="text-2xl font-bold">Pembelajaran di SMA IT HSI IDN</h1>
           </div>
           <div class="value grid md:grid-cols-3 md:grid-rows-2 gap-4">
-            <div class="content bg-Dark10 p-3 flex flex-col gap-4">
+            <div class="content">
               <div class="flex items-center gap-2">
-                <svg
-                  class="w-8 h-8 fill-biru"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M4.04537 5.49167L5.49167 4.04537C6.85525 2.68179 7.53704 2 8.38426 2C9.23148 2 9.91327 2.68179 11.2769 4.04537L8.86636 6.45586L4.04537 11.2769L4.04536 11.2768C2.68179 9.91327 2 9.23148 2 8.38426C2 7.53704 2.68179 6.85525 4.04537 5.49167L4.04537 5.49167Z"
                   />
@@ -387,9 +316,7 @@
                   />
                 </svg>
 
-                <h2 class="text-[20px] md:text-[22px] font-Elegant">
-                  TEKNOLOGI INFORMASI
-                </h2>
+                <h2>TEKNOLOGI INFORMASI</h2>
               </div>
               <h3>Teknik Komputer Dan Jaringan</h3>
 
@@ -418,21 +345,15 @@
                 <p>Learn More</p>
               </div>
             </div>
-            <div class="content bg-Dark10 p-3 flex flex-col gap-4">
+            <div class="content">
               <div class="flex items-center gap-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-8 h-8 fill-biru"
-                  viewBox="0 0 256 256"
-                >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
                   <path
                     d="M152,96H104a8,8,0,0,0-8,8v48a8,8,0,0,0,8,8h48a8,8,0,0,0,8-8V104A8,8,0,0,0,152,96Zm-8,48H112V112h32Zm88,0H216V112h16a8,8,0,0,0,0-16H216V56a16,16,0,0,0-16-16H160V24a8,8,0,0,0-16,0V40H112V24a8,8,0,0,0-16,0V40H56A16,16,0,0,0,40,56V96H24a8,8,0,0,0,0,16H40v32H24a8,8,0,0,0,0,16H40v40a16,16,0,0,0,16,16H96v16a8,8,0,0,0,16,0V216h32v16a8,8,0,0,0,16,0V216h40a16,16,0,0,0,16-16V160h16a8,8,0,0,0,0-16Zm-32,56H56V56H200v95.87s0,.09,0,.13,0,.09,0,.13V200Z"
                   ></path>
                 </svg>
 
-                <h2 class="text-[20px] md:text-[22px] font-Elegant">
-                  TEKNOLOGI INFORMASI
-                </h2>
+                <h2>TEKNOLOGI INFORMASI</h2>
               </div>
               <h3>Rekayasa Perangkat Lunak</h3>
 
@@ -461,21 +382,15 @@
                 <p>Learn More</p>
               </div>
             </div>
-            <div class="content bg-Dark10 p-3 flex flex-col gap-4">
+            <div class="content">
               <div class="flex items-center gap-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-8 h-8 fill-biru"
-                  viewBox="0 0 256 256"
-                >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
                   <path
                     d="M208,24H72A32,32,0,0,0,40,56V224a8,8,0,0,0,8,8H192a8,8,0,0,0,0-16H56a16,16,0,0,1,16-16H208a8,8,0,0,0,8-8V32A8,8,0,0,0,208,24ZM120,40h48v72L148.79,97.6a8,8,0,0,0-9.6,0L120,112Zm80,144H72a31.82,31.82,0,0,0-16,4.29V56A16,16,0,0,1,72,40h32v88a8,8,0,0,0,12.8,6.4L144,114l27.21,20.4A8,8,0,0,0,176,136a8,8,0,0,0,8-8V40h16Z"
                   ></path>
                 </svg>
 
-                <h2 class="text-[20px] md:text-[22px] font-Elegant">
-                  TAFIDZUL QUR'AN
-                </h2>
+                <h2>TAFIDZUL QUR'AN</h2>
               </div>
               <h3>Hafidzul Quran</h3>
 
@@ -504,21 +419,15 @@
                 <p>Learn More</p>
               </div>
             </div>
-            <div class="content bg-Dark10 p-3 flex flex-col gap-4">
+            <div class="content">
               <div class="flex items-center gap-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-8 h-8 fill-biru"
-                  viewBox="0 0 256 256"
-                >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
                   <path
                     d="M69.12,94.15,28.5,128l40.62,33.85a8,8,0,1,1-10.24,12.29l-48-40a8,8,0,0,1,0-12.29l48-40a8,8,0,0,1,10.24,12.3Zm176,27.7-48-40a8,8,0,1,0-10.24,12.3L227.5,128l-40.62,33.85a8,8,0,1,0,10.24,12.29l48-40a8,8,0,0,0,0-12.29ZM162.73,32.48a8,8,0,0,0-10.25,4.79l-64,176a8,8,0,0,0,4.79,10.26A8.14,8.14,0,0,0,96,224a8,8,0,0,0,7.52-5.27l64-176A8,8,0,0,0,162.73,32.48Z"
                   ></path>
                 </svg>
 
-                <h2 class="text-[20px] md:text-[22px] font-Elegant">
-                  TEKNOLOGI INFORMASI
-                </h2>
+                <h2>TEKNOLOGI INFORMASI</h2>
               </div>
               <h3>Web Devlopment</h3>
 
@@ -547,19 +456,15 @@
                 <p>Learn More</p>
               </div>
             </div>
-            <div class="content bg-Dark10 p-3 flex flex-col gap-4">
+            <div class="content">
               <div class="flex items-center gap-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-8 h-8 fill-biru"
-                  viewBox="0 0 256 256"
-                >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
                   <path
                     d="M247.15,212.42l-56-112a8,8,0,0,0-14.31,0l-21.71,43.43A88,88,0,0,1,108,126.93,103.65,103.65,0,0,0,135.69,64H160a8,8,0,0,0,0-16H104V32a8,8,0,0,0-16,0V48H32a8,8,0,0,0,0,16h87.63A87.76,87.76,0,0,1,96,116.35a87.74,87.74,0,0,1-19-31,8,8,0,1,0-15.08,5.34A103.63,103.63,0,0,0,84,127a87.55,87.55,0,0,1-52,17,8,8,0,0,0,0,16,103.46,103.46,0,0,0,64-22.08,104.18,104.18,0,0,0,51.44,21.31l-26.6,53.19a8,8,0,0,0,14.31,7.16L148.94,192h70.11l13.79,27.58A8,8,0,0,0,240,224a8,8,0,0,0,7.15-11.58ZM156.94,176,184,121.89,211.05,176Z"
                   ></path>
                 </svg>
 
-                <h2 class="text-[20px] md:text-[22px] font-Elegant">BAHASA</h2>
+                <h2>BAHASA</h2>
               </div>
               <h3>Pendalaman Bahasa</h3>
 
@@ -588,21 +493,15 @@
                 <p>Learn More</p>
               </div>
             </div>
-            <div class="content bg-Dark10 p-3 flex flex-col gap-4">
+            <div class="content">
               <div class="flex items-center gap-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-8 h-8 fill-biru"
-                  viewBox="0 0 256 256"
-                >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
                   <path
                     d="M232,48H160a40,40,0,0,0-32,16A40,40,0,0,0,96,48H24a8,8,0,0,0-8,8V200a8,8,0,0,0,8,8H96a24,24,0,0,1,24,24,8,8,0,0,0,16,0,24,24,0,0,1,24-24h72a8,8,0,0,0,8-8V56A8,8,0,0,0,232,48ZM96,192H32V64H96a24,24,0,0,1,24,24V200A39.81,39.81,0,0,0,96,192Zm128,0H160a39.81,39.81,0,0,0-24,8V88a24,24,0,0,1,24-24h64ZM160,88h40a8,8,0,0,1,0,16H160a8,8,0,0,1,0-16Zm48,40a8,8,0,0,1-8,8H160a8,8,0,0,1,0-16h40A8,8,0,0,1,208,128Zm0,32a8,8,0,0,1-8,8H160a8,8,0,0,1,0-16h40A8,8,0,0,1,208,160Z"
                   ></path>
                 </svg>
 
-                <h2 class="text-[20px] md:text-[22px] font-Elegant">
-                  DINIYYAH
-                </h2>
+                <h2>DINIYYAH</h2>
               </div>
               <h3>Aqidah, Fiqh, Tafsir</h3>
 
@@ -648,166 +547,324 @@
           class="flex overflow-x-auto p-4 gap-5 items-center border-2 border-biru rounded-md custom-scrollbar"
           style="-webkit-overflow-scrolling: touch"
         >
-          <!-- Profil 1 -->
-          <div
-            class="profil flex flex-col items-center w-60 gap-4 bg-Dark10 p-4 border-2 border-biru rounded-md"
-          >
+          <div class="overflow-x-auto custom-scrollbar flex pb-4 gap-4">
+            <!-- Profil 1 -->
             <div
-              class="photo overflow-hidden w-36 h-36 rounded-md border-2 border-biru"
+              class="profil flex flex-col items-center w-60 gap-4 bg-Dark10 p-4 border-2 border-biru rounded-md"
             >
-              <img
-                src="img/pp.jpeg"
-                class="object-cover w-full h-full"
-                alt="Foto Profil"
-              />
+              <div
+                class="photo overflow-hidden w-36 h-36 rounded-md border-2 border-biru"
+              >
+                <img
+                  src="img/pp.jpeg"
+                  class="object-cover w-full h-full"
+                  alt="Foto Profil"
+                />
+              </div>
+              <h3 class="font-semibold">Thufail Al Humaidy</h3>
+              <p class="text-sm">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                quibusdam.
+              </p>
             </div>
-            <h3 class="font-semibold">Thufail Al Humaidy</h3>
-            <p class="text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
-              quibusdam.
-            </p>
-          </div>
 
-          <!-- Profil 2 -->
-          <div
-            class="profil flex flex-col items-center gap-4 bg-Dark10 p-4 border-2 border-biru rounded-md"
-          >
+            <!-- Profil 2 -->
             <div
-              class="photo overflow-hidden w-36 h-36 rounded-md border-2 border-biru"
+              class="profil flex flex-col items-center gap-4 bg-Dark10 p-4 border-2 border-biru rounded-md"
             >
-              <img
-                src="img/pp.jpeg"
-                class="object-cover w-full h-full"
-                alt="Foto Profil"
-              />
+              <div
+                class="photo overflow-hidden w-36 h-36 rounded-md border-2 border-biru"
+              >
+                <img
+                  src="img/pp.jpeg"
+                  class="object-cover w-full h-full"
+                  alt="Foto Profil"
+                />
+              </div>
+              <h3 class="font-semibold">Thufail Al Humaidy</h3>
+              <p class="text-sm">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                quibusdam.
+              </p>
             </div>
-            <h3 class="font-semibold">Thufail Al Humaidy</h3>
-            <p class="text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
-              quibusdam.
-            </p>
-          </div>
 
-          <!-- Profil 3 -->
-          <div
-            class="profil flex flex-col items-center gap-4 bg-Dark10 p-4 border-2 border-biru rounded-md"
-          >
+            <!-- Profil 3 -->
             <div
-              class="photo overflow-hidden w-36 h-36 rounded-md border-2 border-biru"
+              class="profil flex flex-col items-center gap-4 bg-Dark10 p-4 border-2 border-biru rounded-md"
             >
-              <img
-                src="img/pp.jpeg"
-                class="object-cover w-full h-full"
-                alt="Foto Profil"
-              />
+              <div
+                class="photo overflow-hidden w-36 h-36 rounded-md border-2 border-biru"
+              >
+                <img
+                  src="img/pp.jpeg"
+                  class="object-cover w-full h-full"
+                  alt="Foto Profil"
+                />
+              </div>
+              <h3 class="font-semibold">Thufail Al Humaidy</h3>
+              <p class="text-sm">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                quibusdam.
+              </p>
             </div>
-            <h3 class="font-semibold">Thufail Al Humaidy</h3>
-            <p class="text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
-              quibusdam.
-            </p>
-          </div>
 
-          <!-- Profil 4 -->
-          <div
-            class="profil flex flex-col items-center gap-4 bg-Dark10 p-4 border-2 border-biru rounded-md"
-          >
+            <!-- Profil 4 -->
             <div
-              class="photo overflow-hidden w-36 h-36 rounded-md border-2 border-biru"
+              class="profil flex flex-col items-center gap-4 bg-Dark10 p-4 border-2 border-biru rounded-md"
             >
-              <img
-                src="img/pp.jpeg"
-                class="object-cover w-full h-full"
-                alt="Foto Profil"
-              />
+              <div
+                class="photo overflow-hidden w-36 h-36 rounded-md border-2 border-biru"
+              >
+                <img
+                  src="img/pp.jpeg"
+                  class="object-cover w-full h-full"
+                  alt="Foto Profil"
+                />
+              </div>
+              <h3 class="font-semibold">Thufail Al Humaidy</h3>
+              <p class="text-sm">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                quibusdam.
+              </p>
             </div>
-            <h3 class="font-semibold">Thufail Al Humaidy</h3>
-            <p class="text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
-              quibusdam.
-            </p>
-          </div>
-          <!-- Profil 5 -->
-          <div
-            class="profil flex flex-col items-center gap-4 bg-Dark10 p-4 border-2 border-biru rounded-md"
-          >
+            <!-- Profil 5 -->
             <div
-              class="photo overflow-hidden w-36 h-36 rounded-md border-2 border-biru"
+              class="profil flex flex-col items-center gap-4 bg-Dark10 p-4 border-2 border-biru rounded-md"
             >
-              <img
-                src="img/pp.jpeg"
-                class="object-cover w-full h-full"
-                alt="Foto Profil"
-              />
+              <div
+                class="photo overflow-hidden w-36 h-36 rounded-md border-2 border-biru"
+              >
+                <img
+                  src="img/pp.jpeg"
+                  class="object-cover w-full h-full"
+                  alt="Foto Profil"
+                />
+              </div>
+              <h3 class="font-semibold">Thufail Al Humaidy</h3>
+              <p class="text-sm">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                quibusdam.
+              </p>
             </div>
-            <h3 class="font-semibold">Thufail Al Humaidy</h3>
-            <p class="text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
-              quibusdam.
-            </p>
-          </div>
-          <!-- Profil 6 -->
-          <div
-            class="profil flex flex-col items-center gap-4 bg-Dark10 p-4 border-2 border-biru rounded-md"
-          >
+            <!-- Profil 6 -->
             <div
-              class="photo overflow-hidden w-36 h-36 rounded-md border-2 border-biru"
+              class="profil flex flex-col items-center gap-4 bg-Dark10 p-4 border-2 border-biru rounded-md"
             >
-              <img
-                src="img/pp.jpeg"
-                class="object-cover w-full h-full"
-                alt="Foto Profil"
-              />
+              <div
+                class="photo overflow-hidden w-36 h-36 rounded-md border-2 border-biru"
+              >
+                <img
+                  src="img/pp.jpeg"
+                  class="object-cover w-full h-full"
+                  alt="Foto Profil"
+                />
+              </div>
+              <h3 class="font-semibold">Thufail Al Humaidy</h3>
+              <p class="text-sm">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                quibusdam.
+              </p>
             </div>
-            <h3 class="font-semibold">Thufail Al Humaidy</h3>
-            <p class="text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
-              quibusdam.
-            </p>
-          </div>
-          <!-- Profil 7 -->
-          <div
-            class="profil flex flex-col items-center gap-4 bg-Dark10 p-4 border-2 border-biru rounded-md"
-          >
+            <!-- Profil 7 -->
             <div
-              class="photo overflow-hidden w-36 h-36 rounded-md border-2 border-biru"
+              class="profil flex flex-col items-center gap-4 bg-Dark10 p-4 border-2 border-biru rounded-md"
             >
-              <img
-                src="img/pp.jpeg"
-                class="object-cover w-full h-full"
-                alt="Foto Profil"
-              />
+              <div
+                class="photo overflow-hidden w-36 h-36 rounded-md border-2 border-biru"
+              >
+                <img
+                  src="img/pp.jpeg"
+                  class="object-cover w-full h-full"
+                  alt="Foto Profil"
+                />
+              </div>
+              <h3 class="font-semibold">Thufail Al Humaidy</h3>
+              <p class="text-sm">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                quibusdam.
+              </p>
             </div>
-            <h3 class="font-semibold">Thufail Al Humaidy</h3>
-            <p class="text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
-              quibusdam.
-            </p>
-          </div>
-          <!-- Profil 8 -->
-          <div
-            class="profil flex flex-col items-center gap-4 bg-Dark10 p-4 border-2 border-biru rounded-md"
-          >
+            <!-- Profil 8 -->
             <div
-              class="photo overflow-hidden w-36 h-36 rounded-md border-2 border-biru"
+              class="profil flex flex-col items-center gap-4 bg-Dark10 p-4 border-2 border-biru rounded-md"
             >
-              <img
-                src="img/pp.jpeg"
-                class="object-cover w-full h-full"
-                alt="Foto Profil"
-              />
+              <div
+                class="photo overflow-hidden w-36 h-36 rounded-md border-2 border-biru"
+              >
+                <img
+                  src="img/pp.jpeg"
+                  class="object-cover w-full h-full"
+                  alt="Foto Profil"
+                />
+              </div>
+              <h3 class="font-semibold">Thufail Al Humaidy</h3>
+              <p class="text-sm">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                quibusdam.
+              </p>
             </div>
-            <h3 class="font-semibold">Thufail Al Humaidy</h3>
-            <p class="text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
-              quibusdam.
-            </p>
           </div>
         </div>
       </div>
     </section>
-
     <!-- end section muallim -->
+    <!-- start section gallery -->
+    <section class="gallery mt-6 md:mt-8" id="gallery">
+      <div class="container mx-auto p-3 md:p-0">
+        <div class="border-2 border-biru p-3 rounded-md flex flex-col gap-4">
+          <div class="bg-Dark10 items-center w-full p-5 rounded-md">
+            <h1>Galeri Kami</h1>
+          </div>
+          <div class="flex overflow-x-scroll gap-4 custom-scrollbar pb-4">
+            <!-- gallery 1 -->
+            <div class="card-gallery">
+              <img src="img/bg.jpeg" class="rounded-md" alt="" />
+              <div class="content-gallery">
+                <div class="title-gallery flex gap-2 items-center">
+                  <div class="icon-gallery">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        d="M232,64H208V48a8,8,0,0,0-8-8H56a8,8,0,0,0-8,8V64H24A16,16,0,0,0,8,80V96a40,40,0,0,0,40,40h3.65A80.13,80.13,0,0,0,120,191.61V216H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16H136V191.58c31.94-3.23,58.44-25.64,68.08-55.58H208a40,40,0,0,0,40-40V80A16,16,0,0,0,232,64ZM48,120A24,24,0,0,1,24,96V80H48v32q0,4,.39,8Zm144-8.9c0,35.52-29,64.64-64,64.9a64,64,0,0,1-64-64V56H192ZM232,96a24,24,0,0,1-24,24h-.5a81.81,81.81,0,0,0,.5-8.9V80h24Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h2>Dokumentasi Agustusan</h2>
+                </div>
+                <p class="text-sm">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Ullam neque, natus exercitationem dicta facere vero.
+                </p>
+                <button class="button-kotak">Lihat Lainnya</button>
+              </div>
+            </div>
+            <!-- gallery 2 -->
+            <div class="card-gallery">
+              <img src="img/bg.jpeg" class="rounded-md" alt="" />
+              <div class="content-gallery">
+                <div class="title-gallery flex gap-2 items-center">
+                  <div class="icon-gallery">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        d="M232,64H208V48a8,8,0,0,0-8-8H56a8,8,0,0,0-8,8V64H24A16,16,0,0,0,8,80V96a40,40,0,0,0,40,40h3.65A80.13,80.13,0,0,0,120,191.61V216H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16H136V191.58c31.94-3.23,58.44-25.64,68.08-55.58H208a40,40,0,0,0,40-40V80A16,16,0,0,0,232,64ZM48,120A24,24,0,0,1,24,96V80H48v32q0,4,.39,8Zm144-8.9c0,35.52-29,64.64-64,64.9a64,64,0,0,1-64-64V56H192ZM232,96a24,24,0,0,1-24,24h-.5a81.81,81.81,0,0,0,.5-8.9V80h24Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h2>Dokumentasi Agustusan</h2>
+                </div>
+                <p class="text-sm">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Ullam neque, natus exercitationem dicta facere vero.
+                </p>
+                <button class="button-kotak">Lihat Lainnya</button>
+              </div>
+            </div>
+            <!-- gallery 3 -->
+            <div class="card-gallery">
+              <img src="img/bg.jpeg" class="rounded-md" alt="" />
+              <div class="content-gallery">
+                <div class="title-gallery flex gap-2 items-center">
+                  <div class="icon-gallery">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        d="M232,64H208V48a8,8,0,0,0-8-8H56a8,8,0,0,0-8,8V64H24A16,16,0,0,0,8,80V96a40,40,0,0,0,40,40h3.65A80.13,80.13,0,0,0,120,191.61V216H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16H136V191.58c31.94-3.23,58.44-25.64,68.08-55.58H208a40,40,0,0,0,40-40V80A16,16,0,0,0,232,64ZM48,120A24,24,0,0,1,24,96V80H48v32q0,4,.39,8Zm144-8.9c0,35.52-29,64.64-64,64.9a64,64,0,0,1-64-64V56H192ZM232,96a24,24,0,0,1-24,24h-.5a81.81,81.81,0,0,0,.5-8.9V80h24Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h2>Dokumentasi Agustusan</h2>
+                </div>
+                <p class="text-sm">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Ullam neque, natus exercitationem dicta facere vero.
+                </p>
+                <button class="button-kotak">Lihat Lainnya</button>
+              </div>
+            </div>
+            <!-- gallery 4 -->
+            <div class="card-gallery">
+              <img src="img/bg.jpeg" class="rounded-md" alt="" />
+              <div class="content-gallery">
+                <div class="title-gallery flex gap-2 items-center">
+                  <div class="icon-gallery">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        d="M232,64H208V48a8,8,0,0,0-8-8H56a8,8,0,0,0-8,8V64H24A16,16,0,0,0,8,80V96a40,40,0,0,0,40,40h3.65A80.13,80.13,0,0,0,120,191.61V216H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16H136V191.58c31.94-3.23,58.44-25.64,68.08-55.58H208a40,40,0,0,0,40-40V80A16,16,0,0,0,232,64ZM48,120A24,24,0,0,1,24,96V80H48v32q0,4,.39,8Zm144-8.9c0,35.52-29,64.64-64,64.9a64,64,0,0,1-64-64V56H192ZM232,96a24,24,0,0,1-24,24h-.5a81.81,81.81,0,0,0,.5-8.9V80h24Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h2>Dokumentasi Agustusan</h2>
+                </div>
+                <p class="text-sm">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Ullam neque, natus exercitationem dicta facere vero.
+                </p>
+                <button class="button-kotak">Lihat Lainnya</button>
+              </div>
+            </div>
+            <!-- gallery 5 -->
+            <div class="card-gallery">
+              <img src="img/bg.jpeg" class="rounded-md" alt="" />
+              <div class="content-gallery">
+                <div class="title-gallery flex gap-2 items-center">
+                  <div class="icon-gallery">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        d="M232,64H208V48a8,8,0,0,0-8-8H56a8,8,0,0,0-8,8V64H24A16,16,0,0,0,8,80V96a40,40,0,0,0,40,40h3.65A80.13,80.13,0,0,0,120,191.61V216H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16H136V191.58c31.94-3.23,58.44-25.64,68.08-55.58H208a40,40,0,0,0,40-40V80A16,16,0,0,0,232,64ZM48,120A24,24,0,0,1,24,96V80H48v32q0,4,.39,8Zm144-8.9c0,35.52-29,64.64-64,64.9a64,64,0,0,1-64-64V56H192ZM232,96a24,24,0,0,1-24,24h-.5a81.81,81.81,0,0,0,.5-8.9V80h24Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h2>Dokumentasi Agustusan</h2>
+                </div>
+                <p class="text-sm">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Ullam neque, natus exercitationem dicta facere vero.
+                </p>
+                <button class="button-kotak">Lihat Lainnya</button>
+              </div>
+            </div>
+            <!-- gallery 6 -->
+            <div class="card-gallery">
+              <img src="img/bg.jpeg" class="rounded-md" alt="" />
+              <div class="content-gallery">
+                <div class="title-gallery flex gap-2 items-center">
+                  <div class="icon-gallery">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        d="M232,64H208V48a8,8,0,0,0-8-8H56a8,8,0,0,0-8,8V64H24A16,16,0,0,0,8,80V96a40,40,0,0,0,40,40h3.65A80.13,80.13,0,0,0,120,191.61V216H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16H136V191.58c31.94-3.23,58.44-25.64,68.08-55.58H208a40,40,0,0,0,40-40V80A16,16,0,0,0,232,64ZM48,120A24,24,0,0,1,24,96V80H48v32q0,4,.39,8Zm144-8.9c0,35.52-29,64.64-64,64.9a64,64,0,0,1-64-64V56H192ZM232,96a24,24,0,0,1-24,24h-.5a81.81,81.81,0,0,0,.5-8.9V80h24Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h2>Dokumentasi Agustusan</h2>
+                </div>
+                <p class="text-sm">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Ullam neque, natus exercitationem dicta facere vero.
+                </p>
+                <button class="button-kotak">Lihat Lainnya</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section gallery -->
 
     <script src="script.js"></script>
   </body>

@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer components {
   .bungkus {
     @apply px-4 mt-10 md:mx-10 w-full;
@@ -8,24 +9,67 @@
   .cardnomor {
     @apply bg-Dark10 p-3 w-full flex flex-col items-center justify-center;
   }
-  /* .teams .title::after {
-    @apply content-["who with me"] text-gray-400;
+  .button-kotak {
+    @apply px-3 py-2 rounded-md bg-biru hover:bg-hoverbtn transition-all duration-300;
+  }
+  h1 {
+    @apply text-2xl font-bold;
+  }
+  h2 {
+    @apply text-[20px] md:text-[22px] font-Elegant;
+  }
+  svg {
+    @apply w-6 h-6 fill-biru;
   }
 
-  .owl-dots {
-    @apply text-center mt-4;
+  .profil {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+  }
+  .content-reason {
+    @apply bg-Dark10 p-3 flex flex-1 flex-col gap-4 rounded-md;
+  }
+  /* learn */
+  .content {
+    @apply bg-Dark10 p-3 flex flex-col gap-4 rounded-md;
   }
 
-  .owl-dot {
-    @apply h-3 w-3 mx-2 rounded-full border-2 border-red-500 transition duration-300 ease-in-out;
+  /* tailwind gallery */
+  .card-gallery {
+    @apply border-2 border-white rounded-md p-2 flex flex-col gap-2 flex-1 min-w-[300px] max-w-[500px];
   }
-
-  .owl-dot.active {
-    @apply w-10 rounded-md bg-red-500;
+  .content-gallery {
+    @apply bg-Dark10 p-3 rounded-md flex flex-col gap-2;
   }
+  .icon-gallery {
+    @apply hover:bg-teal-900 p-2 rounded-md border-2 transition-all duration-150;
+  }
+  /* end tailwind gallery*/
+  /* custom scroll gallery dan muallim */
+  .custom-scrollbar::-webkit-scrollbar {
+    height: 5px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #15ff00;
+    border-radius: 10px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background-color: #000000;
+  }
+  /* end custom scroll gallery dan muallim*/
 
-  .owl-dot.active,
-  .owl-dot:hover {
-    @apply bg-red-500;
-  } */
+  /* start custom scroll body */
+  .custom-scrollbar-body::-webkit-scrollbar {
+    height: 5px;
+    width: 7px;
+  }
+  .custom-scrollbar-body::-webkit-scrollbar-thumb {
+    background-color: #3fa2f6;
+    border-radius: 10px;
+  }
+  .custom-scrollbar-body::-webkit-scrollbar-track {
+    background-color: #000000;
+  }
+  /* end custom scroll gallery dan muallim*/
 }
