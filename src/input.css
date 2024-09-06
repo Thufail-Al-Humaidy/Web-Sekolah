@@ -43,7 +43,7 @@
     @apply bg-Dark10 p-3 rounded-md flex flex-col gap-2;
   }
   .icon-gallery {
-    @apply hover:bg-teal-900 p-2 rounded-md border-2 transition-all duration-150;
+    @apply hover:bg-hoverbtn p-2 rounded-md border-2 transition-all duration-150;
   }
   /* end tailwind gallery*/
   /* custom scroll gallery dan muallim */
@@ -71,5 +71,22 @@
   .custom-scrollbar-body::-webkit-scrollbar-track {
     background-color: #000000;
   }
+  /* start tailwind question */
+  .question {
+    @apply bg-Dark10 p-3 px-5 rounded-md flex flex-col gap-5 shadow-lg;
+  }
+  .btn-quest {
+    @apply p-2 border-2 rounded-full hover:bg-teal-900 transition-all duration-200;
+  }
+  .garis {
+    @apply border-biru border;
+  }
+  .answer {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s ease;
+  }
+
+  /* end tailwind question */
   /* end custom scroll gallery dan muallim*/
 }
