@@ -13,6 +13,7 @@ module.exports = {
         'biru': '#3fa2f6',
         'hoverbtn': '#195b94',
         'border': '#3fa2f6',
+        'blue/60': '#161D6F',
       },
     },
   },

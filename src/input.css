@@ -86,7 +86,14 @@
     overflow: hidden;
     transition: height 0.4s ease;
   }
-
   /* end tailwind question */
+  /* start css footer */
+  .sosmed {
+    @apply bg-Dark10 px-6 py-4 rounded-md flex flex-col gap-4 items-center md:items-start;
+  }
+  .icon-sosmed {
+    @apply border rounded-md p-1 border-slate-600 hover:bg-hoverbtn;
+  }
+  /* end css footer */
   /* end custom scroll gallery dan muallim*/
 }
