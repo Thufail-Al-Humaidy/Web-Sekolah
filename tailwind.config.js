@@ -8,9 +8,8 @@ module.exports = {
         'Elegant': 'Playfair Display',
       },
       colors:{
-        'Dark10': '#1A1A1A',
-        'bgbody': '#0F0F0F',
-        'biru': '#3fa2f6',
+        'Dark10': '#426363',
+        'biru': '#36ABB0',
         'hoverbtn': '#195b94',
         'border': '#3fa2f6',
         'blue/60': '#161D6F',
